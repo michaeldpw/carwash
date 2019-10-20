@@ -92,17 +92,13 @@ nav {
     left: 0;
     width: 100%;
     padding-top: 20px;
-    background-color: white
+    background-color: white;
+    height: 500px
+
 }
 
 .page-footer {
     background-color: #1f2840;
-    margin-top: 100px;
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 11 */
 }
 
 .easy {

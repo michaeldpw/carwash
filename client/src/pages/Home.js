@@ -78,14 +78,14 @@ class Home extends React.Component {
         const { backgroundcolor, buttonbackgroundcolor, textcolor } = this.state
         return (
             <div>
-                <header>
-                <nav style={{backgroundColor: backgroundcolor}}>
+               <header>
+                  <nav style={{backgroundColor: backgroundcolor}}>
                     <div className="nav-wrapper">
                     <a href="#" className="brand-logo"><img src={logo}/>AUTOSITTER</a>
                     <ul className="right hide-on-med-and-down">
-                        <li><a href="sass.html">Price</a></li>
-                        <li><a href="badges.html">Services</a></li>
-                        <li><a href="collapsible.html">About</a></li>
+                        <li><a href="#">Price</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
                         <li className="login">
                             <a href="collapsible.html" 
                             style={{ backgroundColor: buttonbackgroundcolor, 
@@ -96,13 +96,12 @@ class Home extends React.Component {
                         </li>
                     </ul>
                     </div>
-                </nav>
+                  </nav>
                 </header>
-                <main>
-                <div className="maincontainer" style={sectionStyle}>
+                <section>
+                  <div className="maincontainer" style={sectionStyle}>
                     <div className="overlay"></div>
                     <div className="book">
-
                         <h1>Don't waste your weekend.</h1>
                         <h3>Let the car wash come to you.</h3>
                         <h4>Book a session for you car.</h4>
@@ -114,8 +113,7 @@ class Home extends React.Component {
                         />
                         <button className="book-btn" 
                                 style={{display: this.state.showBook? 'block': 'none'}}
-                                onClick={this.showModal}
-                               
+                                onClick={this.showModal}          
                         >Book</button>
                         <Modal
                             title="Thank you for making a booking!"
@@ -126,18 +124,17 @@ class Home extends React.Component {
                             <p>AutoSitter is newly established business</p>
                             <p>Some contents...</p>
                             <p>Some contents...</p>
-                        </Modal>
-                        
-                    
-                       
+                        </Modal>   
                     </div>
-                    <div className="info">
-                       <div className="easy">
-                        <h2>How It Works</h2>
-                       </div>
+                  </div>
+                </section> 
+                <section>
+                    <div>
+                        <div className="easy">
+                            <h2>How It Works</h2>
+                        </div>
                     </div>
-                </div>
-                </main>
+                </section>
                 <footer className="page-footer">
         <div className="container">
             <div className="row">
