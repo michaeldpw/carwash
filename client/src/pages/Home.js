@@ -78,6 +78,7 @@ class Home extends React.Component {
         const { backgroundcolor, buttonbackgroundcolor, textcolor } = this.state
         return (
             <div>
+                <header>
                 <nav style={{backgroundColor: backgroundcolor}}>
                     <div className="nav-wrapper">
                     <a href="#" className="brand-logo"><img src={logo}/>AUTOSITTER</a>
@@ -96,7 +97,8 @@ class Home extends React.Component {
                     </ul>
                     </div>
                 </nav>
-
+                </header>
+                <main>
                 <div className="maincontainer" style={sectionStyle}>
                     <div className="overlay"></div>
                     <div className="book">
@@ -135,35 +137,37 @@ class Home extends React.Component {
                        </div>
                     </div>
                 </div>
+                </main>
                 <footer className="page-footer">
-                    <div className="container">
-                        <div className="row">
-                        <div className="col l6 s12">
-                            <h5 className="white-text">AutoSitter</h5>
-                            <ul>
-                            <li><a className="grey-text text-lighten-3" href="#!">About</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Login</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Reservation</a></li>
-                            </ul>
-                        </div>
-                        <div className="col l4 offset-l2 s12">
-                            <h5 className="white-text">Quick Links</h5>
-                            <ul>
-                            <li><a className="grey-text text-lighten-3" href="#!">Pricing</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">FAQ</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Terms & Conditions</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Service Coverage</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="footer-copyright">
-                        <div className="container">
-                        © 2019 Copyright. All rights reserved.
-                        {/* <a className="grey-text text-lighten-4 right" href="#!">More Links</a> */}
-                        </div>
-                    </div>
-                </footer>
+        <div className="container">
+            <div className="row">
+            <div className="col l6 s12">
+                <h5 className="white-text">AutoSitter</h5>
+                <ul>
+                <li><a className="grey-text text-lighten-3" href="#!">About</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Login</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Reservation</a></li>
+                </ul>
+            </div>
+            <div className="col l4 offset-l2 s12">
+                <h5 className="white-text">Quick Links</h5>
+                <ul>
+                <li><a className="grey-text text-lighten-3" href="#!">Pricing</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Terms & Conditions</a></li>
+                <li><a className="grey-text text-lighten-3" href="#!">Service Coverage</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div className="footer-copyright">
+            <div className="container">
+            © 2019 Copyright. All rights reserved.
+            {/* <a className="grey-text text-lighten-4 right" href="#!">More Links</a> */}
+            </div>
+        </div>
+    </footer>
+               
             </div>
         )
     }
