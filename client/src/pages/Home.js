@@ -99,7 +99,7 @@ class Home extends React.Component {
                   </nav>
                 </header>
                 <main>
-                <section className="section">
+                <section className="section" style={{"min-height": "100vh"}}>
                   <div className="maincontainer" style={sectionStyle}>
                     <div className="overlay"></div>
                     <div className="book">
