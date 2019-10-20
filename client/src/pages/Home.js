@@ -3,10 +3,12 @@ import Background from './background.jpg';
 import './pages.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-// import Modal from 'react-modal';
 import { Modal } from 'antd';
 import 'antd/dist/antd.css';
 import logo from './logo.png'
+import first from './first.jpg'
+import second from './second.jpg'
+import third from './third.jpg'
 
 class Home extends React.Component {
 
@@ -99,7 +101,7 @@ class Home extends React.Component {
                   </nav>
                 </header>
                 <main>
-                <section className="section" style={{"min-height": "100vh"}}>
+                <section className="section" id="book" style={{"min-height": "100vh"}}>
                   <div className="maincontainer" style={sectionStyle}>
                     <div className="overlay"></div>
                     <div className="book">
@@ -129,12 +131,36 @@ class Home extends React.Component {
                     </div>
                   </div>
                 </section> 
-                <section class="section">
-                    <div>
+                <section className="section" id="service">
+                    
                         <div className="easy">
-                            <h2>How It Works</h2>
+                            <div>
+                                <h2>How It Works</h2>
+                                <h5>AutoSitter comes to you! And, it takes less than a minute to book.</h5>
+                            </div>
+                            <div className="procedure"> 
+                            
+                                <div className="col-sm-4">
+                                    <img src={first}/>
+                                    <p className="subtitle">1. Park Anywhere</p>
+                                    <p>We wash where you park.</p>
+                                </div> 
+                                <div className="col-sm-4">
+                                    <img src={second}/>
+                                    <p className="subtitle">2. Book Easily</p>
+                                    <p>Online or call us</p>
+                                </div>
+                                <div className="col-sm-4">
+                                    <img src={third}/>
+                                    <p className="subtitle">3. Key Exchange</p>
+                                    <p className="explanation">Only if you'd like the</p>
+                                    <p>inside cleaned as well.</p>
+                                </div>
+                            
+                                
+                            </div>
                         </div>
-                    </div>
+                    
                 </section>
                 </main>
                 <footer className="page-footer">
