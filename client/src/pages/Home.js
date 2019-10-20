@@ -98,7 +98,8 @@ class Home extends React.Component {
                     </div>
                   </nav>
                 </header>
-                <section>
+                <main>
+                <section className="section">
                   <div className="maincontainer" style={sectionStyle}>
                     <div className="overlay"></div>
                     <div className="book">
@@ -128,13 +129,14 @@ class Home extends React.Component {
                     </div>
                   </div>
                 </section> 
-                <section>
+                <section class="section">
                     <div>
                         <div className="easy">
                             <h2>How It Works</h2>
                         </div>
                     </div>
                 </section>
+                </main>
                 <footer className="page-footer">
         <div className="container">
             <div className="row">
