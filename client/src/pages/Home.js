@@ -92,7 +92,7 @@ class Home extends React.Component {
                <header>
                   <nav style={{backgroundColor: backgroundcolor}}>
                     <div className="nav-wrapper">
-                    <a href="#" className="brand-logo"><img src={logo}/>AUTOSITTER</a>
+                    <a href="#" className="brand-logo"><img src={logo}/>ECO-CARWASH</a>
                     <ul className="right hide-on-med-and-down">
                         <li><a href="#">Price</a></li>
                         <li><a href="#">Services</a></li>
