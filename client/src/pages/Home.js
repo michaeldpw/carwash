@@ -12,6 +12,8 @@ import third from './third.jpg'
 
 class Home extends React.Component {
 
+
+
     state = {
         backgroundcolor: '',
         buttonbackgroundcolor: '#488f43',
@@ -71,11 +73,18 @@ class Home extends React.Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.listenScrollEvent)
+        // console.log(minTime, maxTime);
       }
 
 
 
     render(){
+        const minTime = new Date();
+        const maxTime = new Date();
+        minTime.setHours(8);
+        minTime.setMinutes(30);
+        maxTime.setHours(19);
+        maxTime.setMinutes(30);
 
         const { backgroundcolor, buttonbackgroundcolor, textcolor } = this.state
         return (
@@ -107,12 +116,16 @@ class Home extends React.Component {
                     <div className="book">
                         <h1>Enjoy your wonderful weekend</h1>
                         <h3>Atuositter come to your car and wash it.</h3>
-                        <h4>Book a session for you car.</h4>
+                        <h4>Book a session for your car.</h4>
                         <DatePicker
                             selected={this.state.startDate}
                             onChange={this.handleChange}
+                            minTime={minTime}
+                            maxTime={maxTime}
                             showTimeSelect
-                            dateFormat="Pp"
+                            dateFormat="MMMM d, yyyy h:mm aa"
+                            minDate={new Date()}
+                            placeholderText="Select a date and a slot"
                         />
                         <button className="book-btn" 
                                 style={{display: this.state.showBook? 'block': 'none'}}
@@ -128,7 +141,7 @@ class Home extends React.Component {
                         >
                             <p>Our website is undergoing New User Testing.</p>
                             <p>Thank you for your valuable participation!</p>
-                            <p>Service time：8:30am-7:30pm （Sun-Mon）</p>
+                           
                         </Modal>   
                     </div>
                   </div>
