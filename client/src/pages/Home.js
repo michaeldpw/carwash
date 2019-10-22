@@ -105,8 +105,8 @@ class Home extends React.Component {
                   <div className="maincontainer" style={sectionStyle}>
                     <div className="overlay"></div>
                     <div className="book">
-                        <h1>Don't waste your weekend.</h1>
-                        <h3>Let the car wash come to you.</h3>
+                        <h1>Enjoy your wonderful weekend</h1>
+                        <h3>Atuositter come to your car and wash it.</h3>
                         <h4>Book a session for you car.</h4>
                         <DatePicker
                             selected={this.state.startDate}
@@ -119,14 +119,16 @@ class Home extends React.Component {
                                 onClick={this.showModal}          
                         >Book</button>
                         <Modal
-                            title="Thank you for making a booking!"
+                            title="Surprise! This is just a test!"
                             visible={this.state.visible}
                             onOk={this.handleOk}
                             onCancel={this.handleCancel}
+                            width="800px"
+                            centered
                         >
-                            <p>AutoSitter is newly established business</p>
-                            <p>Some contents...</p>
-                            <p>Some contents...</p>
+                            <p>Our website is undergoing New User Testing.</p>
+                            <p>Thank you for your valuable participation!</p>
+                            <p>Service time：8:30am-7:30pm （Sun-Mon）</p>
                         </Modal>   
                     </div>
                   </div>
@@ -202,7 +204,7 @@ export default Home
 
 var sectionStyle = {
     width: "100%",
-    height: "900px",
+    // height: "900px",
     backgroundImage: `url(${Background})`,
     backgroundSize: "cover",
     // opacity: "0.8"

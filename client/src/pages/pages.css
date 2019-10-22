@@ -20,7 +20,7 @@ nav {
 }
 
 .maincontainer {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 9;
@@ -128,11 +128,14 @@ nav {
     height: 200px;
     width: 100%;
     /* border: 1px solid red; */
-    padding: 20px 200px;
+    padding: 20px 10%;
     display: flex;
     flex-direction: row;
 }
 
+/* #service {
+    margin-top: 80px
+} */
 .subtitle {
     font-weight: 500;
     font-size: 18px;
