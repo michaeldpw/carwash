@@ -8,15 +8,41 @@ nav {
     /* height: 100px */
 }
 
+@media (min-width: 2000px) {
+    nav {
+        padding-left: 200px;
+        padding-right: 200px
+    }
+}
+
+@media (min-width: 2000px) {
+    nav ul a {
+        font-size: 24px;
+        font-weight: 300
+    }
+}
+
 .login {
-    padding: 10px 0;
+    padding: 12px 0;
     margin-left: 20px
+}
+@media (min-width: 2000px) {
+    .login {
+      padding: 9px 0
+    }
 }
 .login a {
     height: 40px;
     line-height: 40px;
     background-color:#488f43;
-    font-weight: 500  
+    font-weight: 400  
+}
+@media (min-width: 2000px) {
+    .login a {
+       height: 46px;
+       line-height: 46px;
+       font-size: 22px
+    }
 }
 
 .maincontainer {
