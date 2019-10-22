@@ -115,7 +115,7 @@ class Home extends React.Component {
                     <div className="overlay"></div>
                     <div className="book">
                         <h1>Enjoy your wonderful weekend</h1>
-                        <h3>Atuositter come to your car and wash it.</h3>
+                        <h3>Autositter come to your car and wash it.</h3>
                         <h4>Book a session for your car.</h4>
                         <DatePicker
                             selected={this.state.startDate}
