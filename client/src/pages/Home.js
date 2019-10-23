@@ -1,6 +1,9 @@
 import React from 'react'
 import Background from './background.jpg';
 import './pages.css'
+import MapContainer from '../components/MapContainer'
+import PriceTable from '../components/PriceTable'
+import ScrollspyNav from "react-scrollspy-nav";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Modal, Carousel } from 'antd';
@@ -93,9 +96,16 @@ class Home extends React.Component {
                   <nav style={{backgroundColor: backgroundcolor}}>
                     <div className="nav-wrapper">
                     <a href="#" className="brand-logo"><img src={logo}/>ECO-CARWASH</a>
+                    <ScrollspyNav
+                        scrollTargetIds={["price", "service", "location"]}
+                        activeNavClass="is-active"
+                        scrollDuration="1000"
+                        headerBackground="true"
+                    >
                     <ul className="right hide-on-med-and-down">
-                        <li><a href="#">Price</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#price">Pricing</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#location">Location</a></li>
                         <li><a href="#">About</a></li>
                         <li className="login">
                             <a href="collapsible.html" 
@@ -106,6 +116,7 @@ class Home extends React.Component {
                             </a>
                         </li>
                     </ul>
+                    </ScrollspyNav>
                     </div>
                   </nav>
                 </header>
@@ -115,7 +126,7 @@ class Home extends React.Component {
                         <div className="overlay"></div>
                         <div className="book">
                             <h1>Don't waste your weekend</h1>
-                            <h3>Let the carwash come to you.</h3>
+                            <h3>Let the car wash come to you.</h3>
                             <h4>Book a session for your car.</h4>
                             <DatePicker
                                 selected={this.state.startDate}
@@ -153,7 +164,7 @@ class Home extends React.Component {
                         <div className="easy">
                             <div>
                                 <h2>How It Works</h2>
-                                <h5>AutoSitter comes to you! And, it takes less than a minute to book.</h5>
+                                <h5>Eco-carwash comes to you! And, it takes less than a minute to book.</h5>
                             </div>
                             <div className="procedure"> 
                             
@@ -177,14 +188,27 @@ class Home extends React.Component {
                                 
                             </div>
                         </div>
-                    
+                </section>
+                <section className="section" id="price">
+                    <div className="price">
+                        <h2>Our Price</h2>
+                        <PriceTable />
+                    </div>
+                </section>
+                <section className="section" id="location">
+                    <div className="location">
+                        <div className="where">
+                            <h2>Where Are We</h2>
+                        </div>
+                        <MapContainer />
+                    </div>
                 </section>
                 </main>
                 <footer className="page-footer">
         <div className="container">
             <div className="row">
             <div className="col l6 s12">
-                <h5 className="white-text">AutoSitter</h5>
+                <h5 className="white-text">Eco-carwash</h5>
                 <ul>
                 <li><a className="grey-text text-lighten-3" href="#!">About</a></li>
                 <li><a className="grey-text text-lighten-3" href="#!">Login</a></li>
@@ -216,6 +240,8 @@ class Home extends React.Component {
 }
 
 export default Home
+
+
 
 var sectionStyle = {
     width: "100%",

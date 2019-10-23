@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.24.2",
+    "google-maps-react": "^2.0.2",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.10.2",
     "react-datepicker": "^2.9.6",
@@ -11,7 +12,8 @@
     "react-materialize": "^3.4.1",
     "react-modal": "^3.10.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-scrollspy-nav": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
