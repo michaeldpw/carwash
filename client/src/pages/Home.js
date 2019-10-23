@@ -21,6 +21,7 @@ class Home extends React.Component {
         backgroundcolor: '',
         buttonbackgroundcolor: '#488f43',
         textcolor:'white',
+        boxshadow: 'none',
         startDate: new Date(),
         showBook: false,
         visible: false
@@ -62,13 +63,15 @@ class Home extends React.Component {
           this.setState({
               backgroundcolor: '#488f43',
               buttonbackgroundcolor: 'white',
-              textcolor: '#488f43'
+              textcolor: '#488f43',
+              boxshadow: 'rgba(66, 66, 66, 0.4) 0px 4px 10px 0px'
             })
         } else {
           this.setState({
               backgroundcolor: '',
               buttonbackgroundcolor: '#488f43',
-              textcolor: 'white'
+              textcolor: 'white',
+              boxshadow: 'none'
             
             })
         }
@@ -89,11 +92,11 @@ class Home extends React.Component {
         maxTime.setHours(19);
         maxTime.setMinutes(30);
 
-        const { backgroundcolor, buttonbackgroundcolor, textcolor } = this.state
+        const { backgroundcolor, buttonbackgroundcolor, textcolor, boxshadow } = this.state
         return (
             <div>
                <header>
-                  <nav style={{backgroundColor: backgroundcolor}}>
+                  <nav style={{backgroundColor: backgroundcolor, "box-shadow": boxshadow}}>
                     <div className="nav-wrapper">
                     <a href="#" className="brand-logo"><img src={logo}/>ECO-CARWASH</a>
                     <ScrollspyNav
