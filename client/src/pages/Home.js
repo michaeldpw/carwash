@@ -3,7 +3,7 @@ import Background from './background.jpg';
 import './pages.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { Modal } from 'antd';
+import { Modal, Carousel } from 'antd';
 import 'antd/dist/antd.css';
 import logo from './logo.png'
 import first from './first.jpg'
@@ -111,40 +111,42 @@ class Home extends React.Component {
                 </header>
                 <main>
                 <section className="section" id="book" style={{"min-height": "100vh"}}>
-                  <div className="maincontainer" style={sectionStyle}>
-                    <div className="overlay"></div>
-                    <div className="book">
-                        <h1>Enjoy your wonderful weekend</h1>
-                        <h3>Autositter come to your car and wash it.</h3>
-                        <h4>Book a session for your car.</h4>
-                        <DatePicker
-                            selected={this.state.startDate}
-                            onChange={this.handleChange}
-                            minTime={minTime}
-                            maxTime={maxTime}
-                            showTimeSelect
-                            dateFormat="MMMM d, yyyy h:mm aa"
-                            minDate={new Date()}
-                            placeholderText="Select a date and a slot"
-                        />
-                        <button className="book-btn" 
-                                style={{display: this.state.showBook? 'block': 'none'}}
-                                onClick={this.showModal}          
-                        >Book</button>
-                        <Modal
-                            title="Surprise! This is just a test!"
-                            visible={this.state.visible}
-                            onOk={this.handleOk}
-                            onCancel={this.handleCancel}
-                            width="800px"
-                            centered
-                        >
-                            <p>Our website is undergoing New User Testing.</p>
-                            <p>Thank you for your valuable participation!</p>
-                           
-                        </Modal>   
-                    </div>
-                  </div>
+                    <div className="maincontainer" style={sectionStyle}>
+                        <div className="overlay"></div>
+                        <div className="book">
+                            <h1>Don't waste your weekend</h1>
+                            <h3>Let the carwash come to you.</h3>
+                            <h4>Book a session for your car.</h4>
+                            <DatePicker
+                                selected={this.state.startDate}
+                                onChange={this.handleChange}
+                                minTime={minTime}
+                                maxTime={maxTime}
+                                showTimeSelect
+                                dateFormat="MMMM d, yyyy h:mm aa"
+                                minDate={new Date()}
+                                placeholderText="Select a date and a slot"
+                            />
+                            <button className="book-btn" 
+                                    style={{display: this.state.showBook? 'block': 'none'}}
+                                    onClick={this.showModal}          
+                            >Book</button>
+                            <Modal
+                                title="Surprise! This is just a test!"
+                                visible={this.state.visible}
+                                onOk={this.handleOk}
+                                onCancel={this.handleCancel}
+                                width="800px"
+                                centered
+                            >
+                                <p>Our website is undergoing New User Testing.</p>
+                                <p>Thank you for your valuable participation!</p>
+                            
+                            </Modal>   
+                        </div>
+                        </div>
+                  
+                 
                 </section> 
                 <section className="section" id="service">
                     

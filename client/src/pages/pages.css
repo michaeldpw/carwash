@@ -45,6 +45,16 @@ nav {
     }
 }
 
+.test {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background-color: yellow；
+
+}
+
 .maincontainer {
     position: absolute;
     top: 0;
@@ -196,7 +206,7 @@ nav {
 
 .brand-logo {
     font-weight: 500;
-    font-size: 24px
+    font-size: 22px !important
 }
  .brand-logo img {
      width: 50px;
