@@ -54,10 +54,7 @@ class Home extends React.Component {
         });
     };
 
-    // handleButtonClick = () => {
-    //     alert("f")
-    // }
-
+   
     listenScrollEvent = e => {
         if (window.scrollY > 120) {
           this.setState({
@@ -94,9 +91,9 @@ class Home extends React.Component {
 
         const { backgroundcolor, buttonbackgroundcolor, textcolor, boxshadow } = this.state
         return (
-            <div>
+            <div className="home-container">
                <header>
-                  <nav style={{backgroundColor: backgroundcolor, "box-shadow": boxshadow}}>
+                  <nav role="navigation" style={{backgroundColor: backgroundcolor, "boxShadow": boxshadow}}>
                     <div className="nav-wrapper">
                     <a href="#" className="brand-logo"><img src={logo}/>ECO-CARWASH</a>
                     <ScrollspyNav
@@ -123,8 +120,9 @@ class Home extends React.Component {
                     </div>
                   </nav>
                 </header>
+               
                 <main>
-                <section className="section" id="book" style={{"min-height": "100vh"}}>
+                <section className="section" id="book" style={{"minHeight": "100vh"}}>
                     <div className="maincontainer" style={sectionStyle}>
                         <div className="overlay"></div>
                         <div className="book">
@@ -207,7 +205,7 @@ class Home extends React.Component {
                     </div>
                 </section>
                 </main>
-                <footer className="page-footer">
+        <footer className="page-footer">
         <div className="container">
             <div className="row">
             <div className="col l6 s12">

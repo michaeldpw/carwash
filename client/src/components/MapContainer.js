@@ -23,5 +23,5 @@ export default GoogleApiWrapper({
 
   const mapStyles = {
     width: '100%',
-    height: '600px',
+    height: '500px'
   };
