@@ -74,12 +74,13 @@ nav {
     justify-content: center;
     align-items: center;
     background-image: url('./background.jpg');
-    animation: animate 40s ease-in-out;
+    animation: animate 30s ease-in-out;
     animation-iteration-count: infinite
 }
 @keyframes animate{
     0%,100% {
-        background-image: url('./background.jpg')
+        background-image: url('./background.jpg');
+        
     }
     25% {
         background-image: url('./background5.jpg')
