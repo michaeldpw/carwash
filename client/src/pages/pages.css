@@ -67,6 +67,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    will-change: auto;
     background-image: url('./background.jpg');
     animation: animate 24s ease-in-out;
     animation-iteration-count: infinite
@@ -76,13 +77,11 @@ nav {
         background-image: url('./background.jpg');
         
     }
-    10%, 25%  {
+    20%, 45%  {
         background-image: url('./background5.jpg')
     }
-    30%, 45%{
-        background-image: url('./background2.jpg')
-    }
-    60%, 75%{
+
+    50%, 75%{
         background-image: url('./background4.jpg')
     }
     80%, 100%{
