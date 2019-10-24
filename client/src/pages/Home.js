@@ -247,7 +247,7 @@ export default Home
 var sectionStyle = {
     width: "100%",
     // height: "900px",
-    backgroundImage: `url(${Background})`,
+    // backgroundImage: `url(${Background})`,
     backgroundSize: "cover",
     // opacity: "0.8"
   };
