@@ -69,7 +69,7 @@ nav {
     position: absolute;
     z-index: 10;
     text-align: center;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     /* display: flex;
     flex-direction: column;
     justify-content: center */
