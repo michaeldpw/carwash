@@ -1,0 +1,27 @@
+.signin-panel {
+   z-index: 2;
+   position: absolute;
+   top: calc((100% - 400px)/2);
+   left: calc((100% - 500px)/2);
+   width: 500px;
+   height: 400px;
+   background-color: white;
+   text-align: center;
+   padding: 50px 50px;
+   border-radius: 5px;
+   
+}
+
+.signin-panel h5 {
+    color: #eb8334;
+}
+
+.signin-panel button {
+    margin-top: 30px;
+    width: 100%;
+}
+.input-field {
+    margin-top: 30px;
+    margin-bottom: 0px;
+   
+}

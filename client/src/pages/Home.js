@@ -1,6 +1,7 @@
 import React from 'react'
 import Background from './background.jpg';
 import './pages.css'
+import { NavLink } from 'react-router-dom'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Modal } from 'antd';
@@ -97,14 +98,16 @@ class Home extends React.Component {
                         <li><a href="#">Price</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">About</a></li>
+                       
                         <li className="login">
-                            <a href="collapsible.html" 
+                            <a href="/#signin"
                             style={{ backgroundColor: buttonbackgroundcolor, 
                                     color: textcolor }}
                             >
                             LOGIN
                             </a>
                         </li>
+                    
                     </ul>
                     </div>
                   </nav>
