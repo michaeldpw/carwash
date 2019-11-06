@@ -1,12 +1,12 @@
 import React from 'react'
-import Background from './background.jpg';
-import './pages.css'
+import './pages.css';
+import { NavLink } from 'react-router-dom';
 import MapContainer from '../components/MapContainer'
 import PriceTable from '../components/PriceTable'
 import ScrollspyNav from "react-scrollspy-nav";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { Modal, Carousel } from 'antd';
+import { Modal } from 'antd';
 import 'antd/dist/antd.css';
 import logo from './logo.png'
 import first from './first.jpg'
@@ -76,7 +76,7 @@ class Home extends React.Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.listenScrollEvent)
-        // console.log(minTime, maxTime);
+       
       }
 
 
@@ -108,13 +108,15 @@ class Home extends React.Component {
                         <li><a href="#location">Location</a></li>
                         <li><a href="#">About</a></li>
                         <li className="login">
-                            <a href="collapsible.html" 
+                            
+                            <a href="/#/signin" 
                             style={{ backgroundColor: buttonbackgroundcolor, 
                                     color: textcolor }}
                             >
                             LOGIN
                             </a>
-                        </li>
+                           
+                        </li> 
                     </ul>
                     </ScrollspyNav>
                     </div>
