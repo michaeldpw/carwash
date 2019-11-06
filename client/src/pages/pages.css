@@ -11,6 +11,9 @@ nav {
     /* height: 100px */
 }
 
+nav ul a:hover {
+    color: white;
+}
 @media (min-width: 2000px) {
     nav {
         padding-left: 200px;

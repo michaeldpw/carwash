@@ -1,9 +1,17 @@
 import React from 'react'
 import './components.css'
+import { NavLink } from 'react-router-dom'
+import { Icon } from 'antd';
+
 class SignInPanel extends React.Component {
+
+    goBack = () => {
+        window.location.href="/"
+    }
     render(){
         return (
             <div className="signin-panel">
+                 <button className="back" onClick={this.goBack}> <Icon type="arrow-left" theme="outlined" /></button> 
                 <h5>Sign In To Eco-carwash</h5>
                 <form onSubmit={this.handleSubmit}>
                     <div className="input-field">
@@ -14,8 +22,8 @@ class SignInPanel extends React.Component {
                         <input id="password" type="password" className="validate" />
                         <label for="password">Password</label>
                     </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Log In
-                        <i class="material-icons right"></i>
+                    <button  className="btn waves-effect waves-light" type="submit" name="action">Log In
+                        
                     </button>
                            
                         {/* {

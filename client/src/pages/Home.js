@@ -1,6 +1,6 @@
 import React from 'react'
 import './pages.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MapContainer from '../components/MapContainer'
 import PriceTable from '../components/PriceTable'
 import ScrollspyNav from "react-scrollspy-nav";
@@ -79,9 +79,14 @@ class Home extends React.Component {
        
       }
 
+    goSignIn = () => {
+        window.location.href="/#/signin"
+    }
 
 
     render(){
+
+
         const minTime = new Date();
         const maxTime = new Date();
         minTime.setHours(8);
@@ -107,16 +112,14 @@ class Home extends React.Component {
                         <li><a href="#service">Services</a></li>
                         <li><a href="#location">Location</a></li>
                         <li><a href="#">About</a></li>
-                        <li className="login">
-                            
-                            <a href="/#/signin" 
-                            style={{ backgroundColor: buttonbackgroundcolor, 
+                        <li className="login"> 
+                            <a onClick={this.goSignIn}
+                                style={{ backgroundColor: buttonbackgroundcolor, 
                                     color: textcolor }}
                             >
                             LOGIN
-                            </a>
-                           
-                        </li> 
+                            </a>  
+                        </li>  
                     </ul>
                     </ScrollspyNav>
                     </div>

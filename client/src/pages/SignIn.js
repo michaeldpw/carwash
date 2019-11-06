@@ -6,7 +6,7 @@ const particlesOptions = {
     particles: {
         "particles": {
 	        "number": {
-	            "value": 50
+	            "value": 80
 	        },
 	        "size": {
 	            "value": 3
