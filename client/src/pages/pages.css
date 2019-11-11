@@ -290,5 +290,10 @@ nav ul a:hover {
  }
 
  .signin {
-     background-image: linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%)
- }
+     background-image: linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ 
+    }

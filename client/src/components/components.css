@@ -1,8 +1,7 @@
 .signin-panel {
     z-index: 2;
     position: absolute;
-    top: calc((100% - 400px)/2);
-    left: calc((100% - 500px)/2);
+  
     width: 500px;
     height: 400px;
     background-color: rgb(255, 255, 255, 0.6);
