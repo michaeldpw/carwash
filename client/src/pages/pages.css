@@ -414,7 +414,7 @@ nav ul a:hover {
         font-family: 'Material Icons';
         font-style: normal;
         font-weight: 400;
-        src: url(http://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+        src: url(//fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
       }
       
       .material-icons {
