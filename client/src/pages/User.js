@@ -15,7 +15,7 @@ class User  extends React.Component {
                         <a href="#" className="brand-logo"><img src={logo}></img>Eco-carwash</a>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
                             <li><a href="sass.html">Sass</a></li>
-                            <li><a href="/">Logout</a></li>
+                            <li><a href="/#/signin">Logout</a></li>
                         </ul>
                         </div>
                     </nav>
