@@ -1,6 +1,6 @@
 import React from 'react'
 import './pages.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import MapContainer from '../components/MapContainer'
 import PriceTable from '../components/PriceTable'
 import ScrollspyNav from "react-scrollspy-nav";
@@ -80,7 +80,7 @@ class Home extends React.Component {
       }
 
     goSignIn = () => {
-        window.location.href="/#/signin"
+        window.location.href="/signin"
     }
 
 
@@ -112,7 +112,7 @@ class Home extends React.Component {
                         <li><a href="#service">Services</a></li>
                         <li><a href="#location">Location</a></li>
                         <li><a href="#">About</a></li>
-                        <li className="login"> 
+                        <li className="login-btn"> 
                             <a onClick={this.goSignIn}
                                 style={{ backgroundColor: buttonbackgroundcolor, 
                                     color: textcolor }}
