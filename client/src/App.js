@@ -16,7 +16,7 @@ class App extends React.Component {
                 <Route path="/setavatar/:username" component={SetAvatar}></Route>
                 <Route path="/mypost" component={MyPost}></Route>
                 <Route path="/post/:pid" component={PostDetail}></Route>
-        <Route path="/members" component={Members}></Route>*/}
+                <Route path="/members" component={Members}></Route>*/}
                 <Route exact path="/signup" component={SignUp}></Route>
                 <Route exact path="/signin" component={SignIn}></Route>
                 <Route path="/user" component={User}></Route>
