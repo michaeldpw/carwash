@@ -4,6 +4,7 @@ import logo from './logo.png'
 import { NavLink, Route, Switch } from 'react-router-dom';
 import Account from './Account'
 import Bookings from './Bookings'
+import OrderHistory from './OrderHistory'
 
 class User  extends React.Component {
     render (){
@@ -14,7 +15,7 @@ class User  extends React.Component {
                         <div className="nav-wrapper">
                         <a href="#" className="brand-logo"><img src={logo}></img>Eco-carwash</a>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><a href="sass.html">Sass</a></li>
+                            <li><a href="sass.html">Settings</a></li>
                             <li><a href="/#/signin">Logout</a></li>
                         </ul>
                         </div>
@@ -36,9 +37,11 @@ class User  extends React.Component {
                                         <i className="material-icons">event_available</i> <span>Bookings</span>
                                     </li>
                                 </NavLink>
+                                <NavLink to="/user/orderhistory">
                                 <li>
                                 <i className="material-icons">view_list</i> <span>Order History</span>
                                 </li>
+                                </NavLink>
                                 <li>
                                     <i className="material-icons">redeem</i> <span>My Credit</span>
                                 </li>
@@ -56,7 +59,7 @@ class User  extends React.Component {
                             <Switch>
                                 <Route exact path='/user' component={Account} />
                                 <Route exact path='/user/bookings' component={Bookings} />
-                                
+                                <Route exact path='/user/orderhistory' component={OrderHistory} />
                             </Switch>
                             </div>
                         </div>

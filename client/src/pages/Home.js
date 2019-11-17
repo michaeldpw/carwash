@@ -22,6 +22,7 @@ class Home extends React.Component {
         buttonbackgroundcolor: '#488f43',
         textcolor:'white',
         boxshadow: 'none',
+        transitionDuration: 'none',
         startDate: new Date(),
         showBook: false,
         visible: false
@@ -61,7 +62,8 @@ class Home extends React.Component {
               backgroundcolor: '#488f43',
               buttonbackgroundcolor: 'white',
               textcolor: '#488f43',
-              boxshadow: 'rgba(66, 66, 66, 0.4) 0px 4px 10px 0px'
+              boxshadow: 'rgba(66, 66, 66, 0.4) 0px 4px 10px 0px',
+              transitionDuration: '0.5s'
             })
         } else {
           this.setState({
@@ -94,11 +96,11 @@ class Home extends React.Component {
         maxTime.setHours(19);
         maxTime.setMinutes(30);
 
-        const { backgroundcolor, buttonbackgroundcolor, textcolor, boxshadow } = this.state
+        const { backgroundcolor, buttonbackgroundcolor, textcolor, boxshadow, transitionDuration } = this.state
         return (
             <div className="home-container">
                <header>
-                  <nav role="navigation" style={{backgroundColor: backgroundcolor, "boxShadow": boxshadow}}>
+                  <nav role="navigation" style={{backgroundColor: backgroundcolor, "boxShadow": boxshadow, "transitionDuration": transitionDuration}}>
                     <div className="nav-wrapper">
                     <a href="#" className="brand-logo"><img src={logo}/>ECO-CARWASH</a>
                     <ScrollspyNav
@@ -131,8 +133,8 @@ class Home extends React.Component {
                     <div className="maincontainer" style={sectionStyle}>
                         <div className="overlay"></div>
                         <div className="book">
-                            <h1>Don't waste your weekend</h1>
-                            <h3>Let the car wash come to you.</h3>
+                            <h1>Time saving & eco-friendly</h1>
+                            <h3>Have your car washed while shopping.</h3>
                             <h4>Book a session for your car.</h4>
                             <DatePicker
                                 selected={this.state.startDate}
