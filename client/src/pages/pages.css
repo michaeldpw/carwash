@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Contrail+One|Cuprum|Electrolize);
+@import url(//fonts.googleapis.com/css?family=Contrail+One|Cuprum|Electrolize|Megrim);
 
 main {
     flex: 1 0 auto;
@@ -380,7 +380,13 @@ nav ul a:hover {
         margin-left: 10px;
     }
 
-    .user-ul li:hover {
+    /* .user-ul li:hover {
+        background-color: white;
+        color: #000428;
+        border-radius: 5px;
+        transition: 0.7s;
+    } */
+    .activeclass>li {
         background-color: white;
         color: #000428;
         border-radius: 5px;
@@ -460,4 +466,8 @@ nav ul a:hover {
           margin-top: 40px;
           margin-bottom: 40px;
           height: 200px;
+      }
+
+      .countup {
+          font-family: "Megrim"
       }

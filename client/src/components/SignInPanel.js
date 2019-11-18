@@ -56,7 +56,7 @@ class SigninPanel extends React.Component{
     }
 
     login(){
-        window.location.href = '/#/user'
+        window.location.href = '/#/user/account'
     }
 
     handleChange = (e) => {

@@ -5,11 +5,12 @@ import { NavLink, Route, Switch } from 'react-router-dom';
 import Account from './Account'
 import Bookings from './Bookings'
 import OrderHistory from './OrderHistory'
+import Credit from './Credit'
 
 class User  extends React.Component {
     render (){
         return (
-            <div>
+            <div style={{height: "100vh"}}>
                 <header>
                     <nav className="user-nav">
                         <div className="nav-wrapper">
@@ -21,30 +22,32 @@ class User  extends React.Component {
                         </div>
                     </nav>
                 </header>
-                <main>
+                <main style={{ flex: "1 0 auto", height: "calc(100vh - 290px)"}}>
                 <div className="user-container">
                     <div className="row">
                         <div className="col s3 panel">
                             <h5>Welcome, Michael</h5>
                             <ul className="user-ul">
-                                <NavLink to="/user">
+                                <NavLink to="/user/account" activeClassName="activeclass">
                                     <li>
                                         <i className="material-icons">account_circle</i> <span>My Account</span>
                                     </li>
                                 </NavLink>
-                                <NavLink to="/user/bookings">
+                                <NavLink to="/user/bookings" activeClassName="activeclass">
                                     <li>
                                         <i className="material-icons">event_available</i> <span>Bookings</span>
                                     </li>
                                 </NavLink>
-                                <NavLink to="/user/orderhistory">
+                                <NavLink to="/user/orderhistory" activeClassName="activeclass">
                                 <li>
                                 <i className="material-icons">view_list</i> <span>Order History</span>
                                 </li>
                                 </NavLink>
+                                <NavLink to='/user/mycredit' activeClassName="activeclass">
                                 <li>
                                     <i className="material-icons">redeem</i> <span>My Credit</span>
                                 </li>
+                                </NavLink>
                                 <li>
                                     <i className="material-icons">power_settings_new</i> <span>Logout</span>
                                 </li>
@@ -57,9 +60,10 @@ class User  extends React.Component {
                             </div>
                             <div className="col s11 detail">
                             <Switch>
-                                <Route exact path='/user' component={Account} />
+                                <Route exact path='/user/account' component={Account} />
                                 <Route exact path='/user/bookings' component={Bookings} />
                                 <Route exact path='/user/orderhistory' component={OrderHistory} />
+                                <Route exact path='/user/mycredit' component={Credit} />
                             </Switch>
                             </div>
                         </div>
