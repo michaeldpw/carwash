@@ -17,21 +17,21 @@ const columns = [
   const data = [
     {
       key: '1',
-      service: 'Exterior wash',
+      service: 'Silver',
       money: '$30',
-      address: 'New York No. 1 Lake Park',
+     
     },
     {
       key: '2',
-      service: 'Windows',
-      money: '$15',
-      address: 'London No. 1 Lake Park',
+      service: 'Gold',
+      money: '$45',
+      
     },
     {
       key: '3',
-      service: 'Interior Vacuum',
-      money: '$12',
-      address: 'Sidney No. 1 Lake Park',
+      service: 'Platinum',
+      money: '$55',
+      
     },
   ];
 
@@ -44,6 +44,7 @@ class PriceTable extends React.Component {
                 columns={columns}
                 dataSource={data}
                 bordered
+                pagination={false}
                 />
         )
     }

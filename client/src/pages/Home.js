@@ -177,20 +177,20 @@ class Home extends React.Component {
                             <div className="procedure"> 
                             
                                 <div className="col-sm-4">
-                                    <img src={first}/>
-                                    <p className="subtitle">1. Park Anywhere</p>
-                                    <p>We wash where you park.</p>
+                                    <img src={second}/>
+                                    <p className="subtitle">1. Book Easily</p>
+                                    <p>Online or call us</p>
                                 </div> 
                                 <div className="col-sm-4">
-                                    <img src={second}/>
-                                    <p className="subtitle">2. Book Easily</p>
-                                    <p>Online or call us</p>
+                                    <img src={first}/>
+                                    <p className="subtitle">2. Park In Our Spots</p>
+                                    <p>We wash where you park.</p>
                                 </div>
                                 <div className="col-sm-4">
                                     <img src={third}/>
                                     <p className="subtitle">3. Key Exchange</p>
-                                    <p className="explanation">Only if you'd like the</p>
-                                    <p>inside cleaned as well.</p>
+                                    <p className="explanation">We take care of your car</p>
+                                    <p>before you come back.</p>
                                 </div>
                             
                                 
