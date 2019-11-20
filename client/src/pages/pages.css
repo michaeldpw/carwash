@@ -128,9 +128,9 @@ nav ul a:hover {
     font-family: 'Contrail One';
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1153px){
     .book h1{
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
@@ -140,7 +140,7 @@ nav ul a:hover {
     font-family: 'Contrail One';
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1153px){
     .book h3{
         font-size: 30px;
     }
@@ -153,7 +153,7 @@ nav ul a:hover {
     font-family: 'Contrail One';
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1153px){
     .book h4{
         font-size: 30px;
     }
